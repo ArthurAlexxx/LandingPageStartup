@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    
+        p span {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .imglogo{
+            width: 250px;
+            height: 90px;
+        }
+
+        .btnInscrever{
+            width: 180px;
+        }
+        
+        .IconInscrever{
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        .IconInscrever2{
+            font-size: 21px;
+        }
+
+        #navbar{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #navbar a:hover{
+            color: #00636A;
+        }
+
+        #navbar a.active{
+            border-bottom: 1px solid #00636A;
+        }
+
+        #navlink{
+            font-weight: bolder;
+            color: black;
+        }
+
+
+        #ListaNav{
+            font-size: 14px;
+        }
+
+        .btngeral:hover {
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        body {
+            font-family: Montserrat, sans-serif;
+        }
+
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00636A;
+            animation: fadeInDown 1s ease;
+        }
+
+        .p-header{
+            animation: fadeInDown 1s ease;
+        }
+
+        .PlanoCard {
+            width: 100%;
+            max-width: 350px;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .PlanoCard:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-price {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .plan-description {
+            font-size: 1.1rem;
+            color: #777;
+        }
+
+
+
+
+    </style>
+<body>
+    <div class="navbar-content">
+        <nav style="font-family: 'Montserrat', sans-serif;" id="navbar" class="navbar navbar-expand-sm bg-white p-0 m-0">
+            <div class="container">
+                <div class="navbar-brand me-auto">
+                    <img class="imglogo" src="brand.png" alt="">
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto gap-5 justify-content-center fw-normal">
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link active" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="market.html">Market</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-4">
+                            <a id="navlogin" style="color: #00636A" class="navLogin nav-link fw-bold" href="">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" style="background-color: #00636A; width: 180px; color: white; text-decoration: none;" id="BtnCadastro" class="btngeral btn text-white fw-bold">
+                                <i class="IconInscrever bi bi-person-add"></i> Cadastre-se</a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<main>
+    
+<section class="py-5 text-center" style="background-color: #e0f7fa;">
+        <div class="container">
+            <h1 class="section-header">Escolha o Plano Perfeito para Você</h1>
+            <p class="p-header lead mb-4">Assinaturas flexíveis e sob medida para o sucesso do seu negócio</p>
+        </div>
+</section>
+    
+<section class="py-5">
+    <div class="container text-center">
+        <div class="row justify-content-center gap-4">
+
+                <div style="height: 900px;" class="PlanoCard bg-light">
+                    <h3 class="text-primary">Plano Silver</h3>
+                    <p class="plan-price">R$49/mês</p>
+                    <p class="plan-description">Ideal para quem está começando.</p>
+                    <ul style="height: 577px;" class="list-unstyled">
+                        <li><p>Destaque premium nas buscas e categorias</p></li>
+                        <li><p>Visibilidade melhorada nas buscas</p></li>
+                        <li><p>Redução de 2% nas taxas de comissão</p></li>
+                        <li><p>Suporte prioritário via chat</p></li>
+                        <li><p>Relatórios básicos de desempenho</p></li>
+                        <li><p>Limite de cadastro: 10 produtos</p></li>
+                        <li><p>Participação em promoções exclusivas</p></li>
+                        <li><p>Ferramentas básicas de marketing</p></li>
+                        <li><p>Listagem prolongada dos produtos</p></li>
+                        <li><p>Integração com redes sociais</p></li>
+                    </ul>
+                    <button class="btn btn-outline-primary mt-3">Assine o Prata</button>
+                </div>
+ 
+                <div style="height: 900px;" class="PlanoCard bg-warning text-white">
+                    <h3 class="text-white">Plano Gold</h3>
+                    <p class="plan-price">R$99/mês</p>
+                    <p class="plan-description">Plano popular para expandir seu negócio.</p>
+                    <ul style="height: 577px;" class="list-unstyled">
+                        <li><p>Máxima visibilidade com destaque prioritário</p></li>
+                        <li><p>Destaque premium nas buscas e categorias</p></li>
+                        <li><p>Redução de 5% nas taxas de comissão</p></li>
+                        <li><p>Suporte prioritário via chat e e-mail</p></li>
+                        <li><p>Relatórios avançados de vendas e tendências</p></li>
+                        <li><p>Limite de cadastro: 20 produtos</p></li>
+                        <li><p>Participação em promoções e campanhas premium</p></li>
+                        <li><p>Ferramentas avançadas de marketing</p></li>
+                        <li><p>Listagem prolongada com renovação automática</p></li>
+                        <li><p>Integração com redes sociais e Google Ads</p></li>
+                    </ul>
+                    <button class="btn btn-light mt-3">Assine o Ouro</button>
+                </div>
+    
+                <div class="PlanoCard bg-info text-white">
+                    <h3 class="text-white">Plano Diamond</h3>
+                    <p class="plan-price">R$199/mês</p>
+                    <p class="plan-description">Para empresas que buscam o máximo desempenho.</p>
+                    <ul style="height: 577px;" class="list-unstyled">
+                        <li><p>Máxima visibilidade com destaque prioritário</p></li>
+                                <li><p>Redução de 10% nas taxas de comissão</p></li>
+                                <li><p>Suporte dedicado 24/7 via chat, e-mail e telefone</p></li>
+                                <li><p>Relatórios detalhados e insights de mercado</p></li>
+                                <li><p>Cadastro ilimitado de produtos</p></li>
+                                <li><p>Acesso exclusivo a campanhas e promoções especiais</p></li>
+                                <li><p>Ferramentas de marketing profissional</p></li>
+                                <li><p>Listagem vitalícia dos produtos</p></li>
+                                <li><p>Integração com redes sociais, Google Ads e Facebook Ads</p></li>
+                    </ul>
+                    <button class="btn btn-light mt-3">Assine o Diamante</button>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 100px;" class="d-none d-lg-block">
+        <div class="container text-center">
+            <h1 class="section-header">Tabela de comparação</h1>
+            <p class="p-header lead mb-5">Compare as assinaturas e escolha a melhor opção para seu negócio </p>
+                <div class="">
+                    <img src="Recursos (1).png" alt="">
+                </div>
+        </div>
+    </section>
+    <footer style="background-image: linear-gradient(to top, #ababab, #00636a); color: white; margin-top: 120px;" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="fw-bold">Sobre Nós</h5>
+                    <p class="mb-0">Nós da WhiteLabel oferecemos soluções personalizadas para o seu e-commerce. Descubra como podemos ajudar a expandir seu negócio.</p>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                    <h5 class="fw-bold">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="" class="text-white text-decoration-none">Market</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold">Siga-nos</h5>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">© 2024 WhiteLabel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</html>

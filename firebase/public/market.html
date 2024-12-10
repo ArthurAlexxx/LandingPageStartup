@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        
+
+        p span {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .imglogo{
+            width: 250px;
+            height: 90px;
+        }
+
+        .btnInscrever{
+            width: 180px;
+        }
+        
+        .IconInscrever{
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        .IconInscrever2{
+            font-size: 21px;
+        }
+
+        #navbar{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #navbar a:hover{
+            color: #00636A;
+        }
+
+        #navbar a.active{
+            border-bottom: 1px solid #00636A;
+        }
+
+        #navlink{
+            font-weight: bolder;
+            color: black;
+        }
+
+
+        #ListaNav{
+            font-size: 14px;
+        }
+
+        .btngeral:hover {
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .card:hover{
+            box-shadow: 5px 2px 2px rgba(107, 238, 255, 0.349);
+            transform: translateY(-3px);
+        }
+
+        p.lines{
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar-content">
+        <nav style="font-family: 'Montserrat', sans-serif;" id="navbar" class="navbar navbar-expand-sm bg-white p-0 m-0 fixed-top">
+            <div class="container">
+                <div class="navbar-brand me-auto">
+                    <img class="imglogo" src="brand.png" alt="">
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto gap-5 justify-content-center fw-normal">
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link active" href="market.html">Market</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-4">
+                            <a id="navlogin" style="color: #00636A" class="navLogin nav-link fw-bold" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" style="background-color: #00636A; width: 180px; color: white; text-decoration: none;" id="BtnCadastro" class="btngeral btn text-white fw-bold">
+                                <i class="IconInscrever bi bi-person-add"></i> Cadastre-se</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="carrinho.html" style="font-size: 25px;" class="px-3">
+                            <i style="color:black;" class="bi bi-cart2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header class="container pt-3">
+        <div id="carouselMain" class="carousel carousel-white slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center" data-interval="3000">
+                    <img style="width: 100%; height: 500px;" src="HeroMarket.png" alt="" class="img-fluid d-none d-md-block rounded-5">
+                    <img src="HeroMarket.png" alt="" class="img-fluid d-block d-md-none">
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+        </div>
+        <hr class="mt-3">
+    </header>
+    <main class="mb-5 pb-5 mb-md-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                            <button class="btn btn-danger">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start" >
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option>Ordenar pelo nome</option>
+                                <option>Ordenar pelo menor preço</option>
+                                <option>Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0 mx-3">
+                                <li class="page-item disabled">
+                                    <button class="page-link">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">3</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">4</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">5</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">6</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row g-3">
+                <div class="row g-3" id="product-cards">
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row pb-4">
+                <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start" >
+                            <form class="ml-3 d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block">
+                                <ul class="pagination pagination-sm my-0 mx-3">
+                                    <li class="page-item disabled">
+                                        <button class="page-link">1</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">2</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">3</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">4</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">5</button>
+                                    </li>
+                                    <li class="page-item">
+                                        <button class="page-link">6</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-image: linear-gradient(to top, #ababab, #00636a); color: white; margin-top: 120px;" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="fw-bold">Sobre Nós</h5>
+                    <p class="mb-0">Nós da WhiteLabel oferecemos soluções personalizadas para o seu e-commerce. Descubra como podemos ajudar a expandir seu negócio.</p>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                    <h5 class="fw-bold">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="" class="text-white text-decoration-none">Market</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold">Siga-nos</h5>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">© 2024 WhiteLabel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            
+            const products = JSON.parse(localStorage.getItem('products')) || [];
+    
+            const productCardsContainer = document.getElementById('product-cards');
+    
+            products.forEach((product, index) => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('col-xl-2', 'col-lg-3', 'col-md-4', 'col-sm-6', 'd-flex', 'align-items-stretch');
+                productCard.innerHTML = `
+                    <div class="card text-center bg-light position-relative">
+                        <!-- Ícone de exclusão -->
+                        <button type="button" class="btn btn-danger btn-sm position-absolute top-0 start-0 m-2" onclick="removeProduct(${index})">
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <img class="card-img-top" src="${product.image}" alt="Imagem do produto">
+                        <div class="card-header">${product.price}</div>
+                        <div class="card-body">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text lines">${product.description}</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                <button type="button" class="btn btn-success add-to-cart text-white w-bold" data-index="${index}">Adicionar ao Carrinho</button>
+                            </form>
+                        </div>
+                    </div>
+                `;
+                productCardsContainer.appendChild(productCard);
+            });
+    
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productIndex = this.getAttribute('data-index');
+                    addToCart(products[productIndex]);
+                });
+            });
+        };
+
+        function addToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+    
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${product.name} foi adicionado ao carrinho com sucesso!`);
+        }
+    
+        function removeProduct(index) {
+            const products = JSON.parse(localStorage.getItem('products')) || [];
+            products.splice(index, 1); 
+            localStorage.setItem('products', JSON.stringify(products)); 
+            location.reload(); 
+        }
+    </script>
+    
+</body>
+</html>

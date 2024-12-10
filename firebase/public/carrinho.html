@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        p span {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .imglogo{
+            width: 250px;
+            height: 90px;
+        }
+
+        .btnInscrever{
+            width: 180px;
+        }
+        
+        .IconInscrever{
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        .IconInscrever2{
+            font-size: 21px;
+        }
+
+        #navbar{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #navbar a:hover{
+            color: #00636A;
+        }
+
+        #navbar a.active{
+            border-bottom: 1px solid #00636A;
+        }
+
+        #navlink{
+            font-weight: bolder;
+            color: black;
+        }
+
+        #ListaNav{
+            font-size: 14px;
+        }
+
+        .btngeral:hover {
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .card:hover{
+            box-shadow: 10px 5px 5px rgba(107, 238, 255, 0.349);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-content">
+        <nav style="font-family: 'Montserrat', sans-serif;" id="navbar" class="navbar navbar-expand-sm bg-white p-0 m-0 fixed-top">
+            <div class="container">
+                <div class="navbar-brand me-auto">
+                    <img class="imglogo" src="brand.png" alt="">
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto gap-5 justify-content-center fw-normal">
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navlink" class="nav-link" href="market.html">Market</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item pe-4">
+                            <a id="navlogin" style="color: #00636A" class="navLogin nav-link fw-bold" href="">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" style="background-color: #00636A; width: 180px; color: white; text-decoration: none;" id="BtnCadastro" class="btngeral btn text-white fw-bold">
+                                <i class="IconInscrever bi bi-person-add"></i> Cadastre-se</a>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" style="font-size: 25px;" class="px-3">
+                                <i style="color:black;" class="bi bi-cart2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="my-5">
+        <div class="container">
+            <h1>Carrinho de compras</h1>
+            <hr>
+            <ul class="list-group mb-3" id="cart-items"></ul>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function removeFromCart(index) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1); 
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCart(); 
+        }
+    
+        
+        function updatePrice(index, newQuantity) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const item = cart[index];
+    
+            
+            const total = parseFloat(item.price.replace('R$', '').trim()) * newQuantity;
+    
+            
+            const priceElement = document.querySelector(`#total-price-${index}`);
+            priceElement.textContent = `R$ ${total.toFixed(2)}`;
+        }
+    
+        
+        function updateCart() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+    
+            cart.forEach((item, index) => {
+                const itemLi = document.createElement('li');
+                itemLi.classList.add('list-group-item', 'py-3');
+    
+                itemLi.innerHTML = `
+                    <div class="row g-3 carrinhoList">
+                        <div class="col-4 col-md-3 col-lg-2">
+                            <a href="">
+                                <img src="${item.image}" alt="${item.name}" class="img-thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                            <h4><b><a href="" class="text-decoration-none text-danger">${item.name}</a></b></h4>
+                            <h5><small>${item.description}</small></h5>
+                        </div>
+                        <div class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                            <div class="input-group">
+                                <button type="button" class="btn btn-outline-dark btn-sm" onclick="updateQuantity(${index}, -1)">
+                                    <i class="bi bi-arrow-down-square"></i>
+                                </button>
+                                <input type="text" id="quantity-${index}" class="form-control text-center border-dark" value="1" readonly>
+                                <button type="button" class="btn btn-outline-dark btn-sm" onclick="updateQuantity(${index}, 1)">
+                                    <i class="bi bi-arrow-up-square"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger border-dark btn-sm" onclick="removeFromCart(${index})">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                            <div class="text-right mt-2">
+                                <span class="text-dark" id="total-price-${index}">R$ ${item.price}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemLi);
+            });
+        }
+    
+        function updateQuantity(index, change) {
+            const quantityInput = document.getElementById(`quantity-${index}`);
+            let quantity = parseInt(quantityInput.value);
+    
+            quantity = Math.max(1, quantity + change);
+            quantityInput.value = quantity;
+    
+            updatePrice(index, quantity);
+        }
+    
+        window.onload = function() {
+            updateCart();
+        };
+    </script>
+</body>
+</html>
