@@ -216,20 +216,23 @@
 
     
     onAuthStateChanged(auth, (user) => {
-        const loginButton = document.getElementById('navlogin');
-        const cadastroButton = document.getElementById('BtnCadastro');
-        const logoutButton = document.getElementById('logoutButton');
+    const loginButton = document.getElementById('navlogin');
+    const cadastroButton = document.getElementById('BtnCadastro');
+    const logoutButton = document.getElementById('logoutButton');
 
-        if (user) {
-            loginButton.style.display = "none";
-            cadastroButton.style.display = "none";
-            logoutButton.style.display = "block";
-        } else {
-            loginButton.style.display = "block";
-            cadastroButton.style.display = "block";
-            logoutButton.style.display = "none";
-        }
-    });
+    if (user) {
+        loginButton.style.display = "none";
+        cadastroButton.style.display = "none";
+        logoutButton.style.display = "block";
+
+        
+        window.location.href = "index.html";
+    } else {
+        loginButton.style.display = "block";
+        cadastroButton.style.display = "block";
+        logoutButton.style.display = "none";
+    }
+});
 
     
     document.getElementById('loginForm').addEventListener('submit', async (e) => {
